@@ -1,0 +1,42 @@
+
+body{
+background:#0f172a;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+color:white;
+}
+.card{
+width:90%;
+max-width:500px;
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+text-align:center;
+}
+.dropzone{
+border:2px dashed #64748b;
+padding:30px;
+margin:20px 0;
+border-radius:15px;
+}
+.progress{
+height:10px;
+background:#334155;
+border-radius:10px;
+overflow:hidden;
+margin:15px 0;
+}
+.bar{
+height:100%;
+width:65%;
+}
+button{
+padding:12px 18px;
+margin:8px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
