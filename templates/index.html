@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Song Separator</title>
+    <title>AI Song Separator Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial,sans-serif;
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .card{
+            width:90%;
+            max-width:500px;
+            background:#1e293b;
+            padding:25px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 0 20px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            color:#22c55e;
+        }
+
+        input{
+            margin:15px 0;
+        }
+
+        button{
+            background:#22c55e;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:10px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            opacity:0.9;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Song Separator Working!</h1>
+
+<div class="card">
+    <h1>🎵 AI Song Separator Pro</h1>
+
+    <p>Upload your song and separate vocals & instrumental.</p>
+
+    <input type="file">
+
+    <br>
+
+    <button>Separate Song</button>
+</div>
+
 </body>
 </html>
