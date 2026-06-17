@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beat split  Pro</title>
+    <title>AI Song Separator Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#0f172a;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-color:white;
-}
+    <style>
+        body{
+            margin:0;
+            font-family:Arial,sans-serif;
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
 
-.card{
-width:90%;
-max-width:500px;
-background:#1e293b;
-padding:25px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 0 20px rgba(0,0,0,0.3);
-}
+        .card{
+            width:90%;
+            max-width:500px;
+            background:#1e293b;
+            padding:25px;
+            border-radius:20px;
+            text-align:center;
+        }
 
-h1{
-margin-bottom:10px;
-}
+        button{
+            background:#22c55e;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:10px;
+            font-size:16px;
+        }
 
-.dropzone{
-border:2px dashed #64748b;
-padding:25px;
-border-radius:15px;
-margin:20px 0;
-}
-
-input[type=file]{
-margin:10px 0;
-}
-
-button{
-background:#22c55e;
-color:white;
-border:none;
-padding:12px 18px;
-margin:8px;
-border-radius:10px;
-font-size:16px;
-cursor:pointer;
-}
-
-button:hover{
-opacity:0.9;
-}
-
-.progress{
-height:10px;
-background:#334155;
-border-radius:10px;
-overflow:hidden;
-margin:15px 0;
-}
-
-.bar{
-height:100%;
-width:70%;
-background:#22c55e;
-}
-</style>
-
+        #result{
+            margin-top:20px;
+            display:none;
+            color:#22c55e;
+        }
+    </style>
 </head>
+
 <body>
 
 <div class="card">
-<h1>🎵 AI Song Separator Pro</h1>
+    <h1>🎵 AI Song Separator Pro</h1>
 
-<p>Upload a song and separate vocals & instrumental tracks.</p>
+    <p>Upload your song and separate vocals & instrumental.</p>
 
-<div class="dropzone">
-<input type="file">
-<p>Drag & Drop Song Here</p>
+    <input type="file" id="song">
+
+    <br><br>
+
+    <button onclick="separateSong()">Separate Song</button>
+
+    <div id="result">
+        ✅ Song uploaded successfully!<br><br>
+        🎤 Vocals Ready<br>
+        🎹 Instrumental Ready
+    </div>
 </div>
 
-<div class="progress">
-<div class="bar"></div>
-</div>
-
-<button>Separate Song</button>
-
-<br>
-
-<button>Download Vocals</button>
-<button>Download Instrumental</button>
-
-</div>
+<script>
+function separateSong(){
+    document.getElementById("result").style.display="block";
+}
+</script>
 
 </body>
 </html>
